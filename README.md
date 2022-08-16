@@ -19,7 +19,15 @@ npm i -D eslint @thiago_brolly/eslint-config
 
 ```
 {
-  "extends": "@thiago_brolly/eslint-config/react"
+  "extends": "@thiago_brolly/eslint-config/reactJS"
+}
+```
+
+or
+
+```
+{
+  "extends": "@thiago_brolly/eslint-config/reactTS"
 }
 ```
 
