@@ -1,6 +1,6 @@
 {
   "name": "@thiago_brolly/eslint-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "index.js",
   "description": "ESLint configuration used by Thiago Brolly.",
   "license": "MIT",
