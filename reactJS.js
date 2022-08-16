@@ -1,0 +1,51 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    jest: true,
+  },
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+    'plugin:prettier/recommended',
+  ],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  plugins: ['react', 'react-hooks', 'prettier'],
+  rules: {
+    'prettier/prettier': [
+      'error',
+      {
+        semi: true,
+        singleQuote: true,
+        trailingComma: 'all',
+        arrowParens: 'always',
+        printWidth: 80,
+        tabWidth: 2,
+      },
+    ],
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/react-in-jsx-scope': 'off',
+    'import/prefer-default-export': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'no-unused-expressions': 'off',
+    'no-shadow': 'off',
+    'react/prop-types': 'off',
+    'no-unsafe-optional-chaining': 'off',
+    'no-useless-escape': 'off',
+    'no-unused-vars': 'warn',
+    'import/no-extraneous-dependencies': 'off',
+    'no-nested-ternary': 'off',
+    'react/jsx-no-useless-fragment': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
+    'jsx-a11y/control-has-associated-label': 'off',
+    'jsx-a11y/no-interactive-element-to-noninteractive-role': 'off',
+  },
+};
